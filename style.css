@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap');
+.logo {
+    color: brown;
+    text-shadow: 0px 0px 2px;
+    animation: animate 2s infinite linear;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    display: inline-block;
+    text-align: center;
+    font-size: 50px;
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        color: lawngreen;
+    }
+    25% {
+        color: deeppink;
+    }
+    50% {
+        color: deepskyblue;
+    }
+    75% {
+        color: white;
+    }
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #eee;
+}
+
+#wrapper {
+    width: 500px;
+    height: 50%;
+    overflow: hidden;
+    border: 0px solid #000;
+    margin: 50px auto;
+    padding: 10px;
+}
+
+.main-content {
+    width: 400px;
+    height: 100%;
+    margin: 10px auto;
+    background-color: #fff;
+    border: 2px solid #e6e6e6;
+    padding: 40px 50px;
+}
+
+.header {
+    border: 0px solid #000;
+    margin-bottom: 0px;
+}
+
+.header img {
+    padding: 0px 0px 30px 0px;
+    width: 60px;
+}
+
+.input-1,
+.input-2 {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 8px 12px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.overlap-text {
+    position: relative;
+}
+
+.overlap-text a {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    color: #003569;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'Overpass Mono', monospace;
+    letter-spacing: -1px;
+}
+
+.btn {
+    width: 100%;
+    background-color: #3897f0;
+    border: 1px solid #3897f0;
+    padding: 5px 12px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.sub-content {
+    width: 400px;
+    height: 40%;
+    margin: 10px auto;
+    border: 1px solid #e6e6e6;
+    padding: 20px 50px;
+    background-color: #fff;
+}
+
+.s-part {
+    text-align: center;
+    font-family: 'Overpass Mono', monospace;
+    word-spacing: -3px;
+    letter-spacing: -2px;
+    font-weight: normal;
+}
+
+.s-part a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #3897f0;
+    font-family: 'Overpass Mono', monospace;
+    word-spacing: -3px;
+    letter-spacing: -2px;
+    font-weight: normal;
+}
+
+input:focus {
+    background-color: yellow;
+}
+
+button {
+    width: 100%;
+    background-color: #3897f0;
+    border: 1px solid #3897f0;
+    padding: 5px 12px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+    /* text-shadow: 0px 0px 10px #3399ff, 0px 0px 20px #3399ff, 0px 0px 40px #3399ff, 0px 0px 60px #3399ff, 0px 0px 80px #3399ff; */
+}
+
+button:hover {
+    transition: ease-out 3s;
+}

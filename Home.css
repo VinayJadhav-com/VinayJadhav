@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap');
+#sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    position: fixed;
+}
+
+.logo1 {
+    width: 50px;
+    height: 50px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 55%;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+/* --------------------------------------------- */
+
+#toggle {
+    opacity: 0;
+}
+
+#toggle:checked+.menu_btn>span {
+    transform: rotate(45deg);
+}
+
+#toggle:checked+.menu_btn>span::before {
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#toggle:checked+.menu_btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#toggle:checked~.box {
+    left: 0 !important;
+}
+
+.menu_btn {
+    position: fixed;
+    top: 130px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu_btn>span,
+.menu_btn>span::before,
+.menu_btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+}
+
+.menu_btn>span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu_btn>span::after {
+    content: '';
+    top: 8px;
+}
+
+.box {
+    display: block;
+    position: fixed;
+    top: 95px;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #Eceff1;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 4);
+    transition-duration: .25s;
+}
+
+.menu_item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+}
+
+.menu_item:hover {
+    background-color: #CFD8DC;
+}
+
+#vid {
+    /* width: 500px;
+    height: 700px; */
+}
+
+.videos {
+    margin-top: 100px;
+    margin-left: 100PX;
+    word-spacing: 30px;
+}
+
+video {
+    display: inline-block;
+    width: 350px;
+    height: 200px;
+}

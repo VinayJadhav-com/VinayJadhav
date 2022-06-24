@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap');
+#hero {
+    background-image: url(./image/TornaGadnew.jpg);
+    height: 95vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+#hero h4 {
+    padding-bottom: 5px;
+}
+
+#hero h1 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#eb4d14, #EBB014, #FFDE40, #9C4100, #9C4100, #9C4100);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#hero p {
+    color: brown;
+}
+
+#hero button {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    background-color: brown;
+    color: gold;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+}
+
+#fileimg {
+    padding: 0 5px;
+}
+
+.vin {
+    background-image: url(./image/Rajgad/cover1.jpg);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+.vin button {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    background-color: brown;
+    color: gold;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    font-family: fantasy;
+    background-color: crimson;
+    border-radius: 15px;
+    text-shadow: 0px 0px 100px;
+    animation: animate 2s infinite linear;
+}
